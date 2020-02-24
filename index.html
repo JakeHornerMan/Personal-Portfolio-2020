@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<title> Jake Horner Portfolio</title>
+		<link rel="stylesheet" href="style.css"/>
+		<!--ssslider -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script><script src="sss/sss.min.js"></script><link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+		<script>jQuery(function($) {$('.slider').sss();});</script>
+		<!--fontawesome-->
+		<script src="https://kit.fontawesome.com/ea941bfc20.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header>
+			<div class="sidenav">
+				<a href="#webdev">Web Design</a>
+				<a href="#programming">Programming</a>
+				<a href="#art">Art</a>
+				<a href="#contact">Contact</a>
+			</div>
+		</header>
+		<div class="wrappers">
+			<div class="intro" style="display:flex;flex-direction:row;justify-content:space-around;">
+				<div class="slider" style="height:300px;width:300px;margin:0 auto;">
+					<img src="sss/images/jake1.jpg" /><img src="sss/images/jake2.jpg" /><img src="sss/images/jake3.jpg" />
+				</div>
+				<div class="about" style="padding-left:30px;text-align:center;">
+					<h1 id="center">JAKE HORNER</h1>
+					<p id="center">Student of National College of Ireland, BSc (Honors) in Computing</p>
+					<h4 id="header">Skills</h4>
+					<p id="center">Web Design</p>
+					<p id="center">Graphic Design/Animation/Digital Art</p>
+					<p id="center">Programming</p>
+					<h4 id="header">Tools</h4>
+					<p id="center">Adobe photoshop, After Effects and AnimateCC</p>
+					<p id="center">Java, C#, JavaScript, PHP, mySQL</p>		
+				</div>
+			</div>
+			<br>
+			<div class="socialIcons" style="display:flex;flex-direction:row;justify-content:space-around;">
+				<a href="https://www.linkedin.com/in/jake-horner-a9203212b/" class="hvr-float-shadow">
+					<img src="images/linkedin.png" id="social" class="hvr-pulse">
+				</a>
+				<a href="https://www.instagram.com/jakedafartist/" class="hvr-float-shadow">
+					<img src="images/instagram.png"id="social" class="hvr-pulse">
+				</a>
+				<a href="https://github.com/JakeHornerMan" class="hvr-float-shadow">
+					<img src="images/github.png" id="social" class="hvr-pulse">
+				</a>
+			</div>
+		</div>
+		<div class="wrappers" id="webdev">
+			<div  style="display:flex;flex-direction:column;justify-content:center;">
+				<h1>Web Development</h1>
+				<p>Web development is a key area in computing technology for me, thoughout my career i have specialised in HTML, CSS, JavaScript, and PHP.</p>
+				<p>Currently working as a junior Web Developer in <a href="https://www.usheru.com/page/home?from=%2Fpage%2Fhome">Usher U</a></p>
+				<p id="subheader">Here are some Web Projects I have Worked on</p>
+				<button class="accordion">SnapTravelPop</button>
+				<div class="panel" style="display:flex;justify-content:space-around;">
+					<div style="width:33%;">
+						<p>SnapTravelPop is interactive map based social media. During this project i specialised in PHP for database handling, and Json data manipulating to allow photos to be place in mapbox API</p>
+					</div>
+					<div>
+						<a href="https://snaptravelpop.000webhostapp.com/" style="height:50px; margin-bottom:10px;">
+							<img src="images/SNP.png"/ >
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrappers" id="programming">
+			<div></div>
+		</div>
+		<div class="wrappers" id="art">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+					  <img src="images/insta1.png" alt="Avatar" style="width:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>2d Art</h1>
+						<a href="https://www.instagram.com/jakedafartist/" class="hvr-float-shadow">
+							<img src="images/instagram.png"id="social" class="hvr-pulse">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+					  <img src="images/insta2.png" alt="Avatar" style="width:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Digital Art</h1>
+						<a href="https://www.instagram.com/jakedafartist/" class="hvr-float-shadow">
+							<img src="images/instagram.png"id="social" class="hvr-pulse">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+					  <img src="https://m.media-amazon.com/images/I/61nt34iuBkL._SS500_.jpg" alt="Avatar" style="width:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>3d Art</h1>
+						<a href="https://www.instagram.com/jakedafartist/" class="hvr-float-shadow">
+							<img src="images/instagram.png"id="social" class="hvr-pulse">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrappers" id="contact">
+			<div>
+				<div class="col-md-12">
+					<h3>Contact Me!</h3>
+					<form class="contact-form" action="contact.php" method="post">
+						<input type="text" name="name" placeholder="Full Name">
+						<input type="text" name="mail" placeholder="Your E-mail">
+						<input type="text" name="subject" placeholder="Subject">
+						<textarea name="message" placeholder="Message"></textarea>
+						<button type="submit" name="Submit">Send Message!</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>var accordions = document.querySelectorAll("button.accordion");
+
+for (var i = 0; i < accordions.length; i++) {
+  accordions[i].onclick = function() {
+    this.classList.toggle("active");
+    this.nextElementSibling.classList.toggle("show");
+    hideAll(this);
+  };
+}
+
+function hideAll(exceptThis) {
+  for (var i = 0; i < accordions.length; i++) {
+    if (accordions[i] !== exceptThis) {
+      accordions[i].classList.remove("active");
+      accordions[i].nextElementSibling.classList.remove("show");
+    }
+  }
+}</script>
+</html>
